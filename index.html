@@ -194,7 +194,7 @@
 
                     <div>
                         <h2 class="text-4xl font-bold">Couple 20</h2>
-                        <h4>Coupon code</h4>
+                        <h4>Couponcode</h4>
                     </div>
                 </div>
             </div>
@@ -228,7 +228,7 @@
                   <div>
                     <p class=" bg-lime-200 px-2 py-2 text-lime-600 flex items-center gap-2">
                       <i class="fa-solid fa-chair"></i>
-                      <span>40</span>
+                      <span id="total-seatinbus">40</span>
                       <span>Seat left</span>
                     </p>
                   </div>
@@ -430,22 +430,22 @@
                   </h3>
                   <div class="border-b-2 border-dashed my-4"></div>
                   <ul id="adding-seat" class="space-y-5">
-                    <h3 class="text-center text-3xl capitalize">no  seat booked</h3>
+                    <h3 id="no-seat" class="text-center text-3xl capitalize">no  seat booked</h3>
                   </ul>
                   <div class="border-b-2 border-dashed my-4"></div>
                   <div class="flex justify-between  text-lg font-bold">
                     <p>Total Prices</p>
                     <p>
                       <span>BDT</span>
-                      <span>****</span>
+                      <span id="sumPrices">***</span>
                     </p>
 
                   </div>
                   <div class="border-b-2 border-dashed my-4"></div>
 
-                  <div class="flex justify-between items-center gap-y-2 gap-4 border-y-2 py-2 my-2  border-dashed  text-lg font-semibold">
-                    <input disabled class="input my-5 w-full input-primary border-primary" type="text" placeholder="enter a coupone">
-                    <button disabled class="btn btn-primary">Apply</button>
+                  <div id="show-coupon-prices" class="flex justify-between items-center gap-y-2 gap-4 border-y-2 py-2 my-2  border-dashed  text-lg font-semibold">
+                    <input id="disabledInput" disabled class="input my-5 w-full input-primary border-primary" type="text" placeholder="enter a coupone">
+                    <button id="disabledBtn" disabled class="btn btn-primary">Apply</button>
 
                   </div>
 
@@ -453,7 +453,7 @@
                     <p>Grand Prices</p>
                     <p>
                       <span>BDT</span>
-                      <span>****</span>
+                      <span id="grandTotal">****</span>
                     </p>
 
                   </div>
@@ -474,7 +474,7 @@
                     <div class="label">
                       <span class="label-text">Phone Number</span>
                     </div>
-                    <input type="number" placeholder="Phone Number" class="input input-bordered w-full max-w-xs" />
+                    <input id="phone-number" type="number" placeholder="Phone Number" class="input input-bordered w-full max-w-xs" />
                    
                   </label>
                   <label class="form-control w-full max-w-xs my-3">
@@ -484,7 +484,7 @@
                     <input type="text" placeholder="Enter Email" class="input input-bordered w-full max-w-xs" />
                    
                   </label>
-                  <button onclick="my_modal_1.showModal()" class="btn btn-primary  mt-5 text-lg  text-white w-full uppercase">Next</button>
+                  <button id="next-btn" disabled onclick="my_modal_1.showModal()" class="btn btn-primary  mt-5 text-lg  text-white w-full uppercase">Next</button>
 
                     
 
